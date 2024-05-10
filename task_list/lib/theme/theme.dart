@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+import 'package:task_list/theme/text_theme.dart';
+
+final lightScheme = const ColorScheme.light().copyWith(
+  background: const Color(0xff1C242B),
+  onBackground: Colors.white,
+  surface: const Color(0xffFEF7FF),
+  surfaceVariant: const Color(0xffFEF7FF),
+  surfaceTint: Color.fromARGB(255, 250, 170, 83),
+  onSurface: const Color(0xff1D1B20),
+  onSurfaceVariant: const Color(0xff49454F),
+  onInverseSurface: const Color(0xffE6E0E9),
+  primary: const Color(0xff4893EB),
+  onPrimary: const Color(0xffFFFFFF),
+  inversePrimary: const Color(0xff4893AB),
+  primaryContainer: const Color(0xff4893EB),
+  onPrimaryContainer: const Color(0xff21005D),
+  secondary: const Color(0xff625B71),
+  onSecondary: const Color(0xffFFFFFF),
+  secondaryContainer: const Color(0xffE8DEF8),
+  onSecondaryContainer: const Color(0xff1D192B),
+  tertiary: const Color(0xff7D5260),
+  onTertiary: const Color(0xffFFFFFF),
+  tertiaryContainer: const Color(0xffFFD8E4),
+  onTertiaryContainer: const Color(0xff31111D),
+  outline: const Color(0xff79747E),
+  outlineVariant: const Color(0xff938F99),
+  shadow: const Color(0xff000000),
+  scrim: const Color(0xff000000),
+  error: const Color(0xffB3261E),
+  onError: const Color(0xffFFFFFF),
+  errorContainer: const Color(0xffF9DEDC),
+  onErrorContainer: const Color(0xff410E0B),
+);
+
+final darkScheme = const ColorScheme.dark().copyWith(
+  background: const Color(0xff2c2c2c),
+  onBackground: const Color(0xffd8d9d9),
+  surface: const Color(0xff141218),
+  surfaceVariant: const Color(0xff141218),
+  surfaceTint: const Color(0xff3B383E),
+  onSurface: const Color(0xffE6E0E9),
+  onSurfaceVariant: const Color(0xffCAC4D0),
+  onInverseSurface: const Color(0xff1D1B20),
+  primary: const Color(0xff4893EB),
+  onPrimary: const Color(0xffFFFFFF),
+  inversePrimary: const Color(0xffFFFFFF),
+  primaryContainer: const Color(0xffFFFFFF),
+  onPrimaryContainer: const Color(0xffEADDFF),
+  secondary: const Color(0xffCCC2DC),
+  onSecondary: const Color(0xff332D41),
+  secondaryContainer: const Color(0xff4A4458),
+  onSecondaryContainer: const Color(0xffE8DEF8),
+  tertiary: const Color(0xffEFB8C8),
+  onTertiary: const Color(0xff492532),
+  tertiaryContainer: const Color(0xff633B48),
+  onTertiaryContainer: const Color(0xffFFD8E4),
+  outline: const Color(0xff938F99),
+  outlineVariant: const Color(0xffc9c9c9),
+  shadow: const Color(0xff000000),
+  scrim: const Color(0xff000000),
+  error: const Color(0xffF2B8B5),
+  onError: const Color(0xff601410),
+  errorContainer: const Color(0xff8C1D18),
+  onErrorContainer: const Color(0xffF9DEDC),
+);
+
+ThemeData lightAppTheme = ThemeData(
+  colorScheme: lightScheme,
+  textTheme: lightTextTheme,
+);
+
+ThemeData darkAppTheme = ThemeData(
+  colorScheme: darkScheme,
+  textTheme: darkTextTheme,
+);

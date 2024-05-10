@@ -1,0 +1,23 @@
+app:
+  name: App Name
+home:
+  search: Search
+  search_error: Searched word invalid
+network_failure: 
+    not_implemented: Not Implemented
+    request_cancelled: Request Cancelled
+    internal_server_error: Internal Server Error
+    service_unavailable: Service unavailable
+    method_not_allowed: Method not allowed
+    bad_request: Bad request
+    unexpected_error_occurred: Unexpected error occurred
+    connection_request_timeout: Connection request timeout
+    no_internet_connection: No internet connection
+    conflict: Error due to a conflict
+    send_timeout: Send timeout in connection with API server
+    unable_to_process: Unable to process the data
+    incorrect_format: Incorrect format
+    not_acceptable: Not acceptable
+    invalid_status_code: Received invalid status code
+    unauthorized: Unauthorized user
+
