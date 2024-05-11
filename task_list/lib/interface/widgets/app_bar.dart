@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:task_list/providers/router_provider.dart';
 import 'package:task_list/theme/app_images.dart';
 
 class AppBarNav extends StatelessWidget implements PreferredSizeWidget {
@@ -21,7 +22,9 @@ class AppBarNav extends StatelessWidget implements PreferredSizeWidget {
         leading: true == back
             ? IconButton(
                 onPressed: () {
-                  GoRouter.of(context).pop();
+                  if (context.mounted) {
+                    context.go(Routes.main);
+                  }
                 },
                 icon: const Image(
                   width: 20,
