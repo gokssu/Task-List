@@ -1,16 +1,13 @@
 # task_list
 
-A new Flutter project.
+Tasks list project developed with Flutter
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# favorite_books
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/gokssu/Task-List/assets/26454080/b8bed61c-d775-4d8c-ae6d-e1968bd3137f" width="300">
+<img src="https://github.com/gokssu/Task-List/assets/26454080/42d0c311-c61c-4056-b819-d58de94928fc" width="300">
+<img src="https://github.com/gokssu/Task-List/assets/26454080/b02ccdd4-4d93-4298-82b0-2513478e294a" width="300">
