@@ -33,10 +33,10 @@ class SplashScreen extends ConsumerWidget {
                     height: 150,
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
+                    padding: const EdgeInsets.only(top: 5.0),
                     child: Text(
                       'app.name'.tr(),
-                      style: Theme.of(context).textTheme.headlineLarge,
+                      style: Theme.of(context).textTheme.headlineLarge!.copyWith(color: Theme.of(context).colorScheme.primary),
                     ),
                   ),
                 ],

@@ -1,34 +1,40 @@
 import 'package:flutter/material.dart';
 
 CustomColors lightCustomColors = const CustomColors(
-  successColor: Colors.green,
-  moreInfo: Color(0xff5E5B67),
+  proColor: Color(0xffCDE53D),
+  proColorBorder: Color(0xff9EB031),
+  moneyColor: Color(0xffF2C94C),
 );
 
 CustomColors darkCustomColors = const CustomColors(
-  successColor: Color(0xff6DFA72),
-  moreInfo: Color(0xff5E5B67),
+  proColor: Color(0xffCDE53D),
+  proColorBorder: Color(0xff9EB031),
+  moneyColor: Color(0xffF2C94C),
 );
 
 @immutable
 class CustomColors extends ThemeExtension<CustomColors> {
   const CustomColors({
-    required this.successColor,
-    required this.moreInfo,
+    required this.proColor,
+    required this.proColorBorder,
+    required this.moneyColor,
   });
 
-  final Color? successColor;
+  final Color? proColor;
 
-  final Color? moreInfo;
+  final Color? proColorBorder;
+  final Color? moneyColor;
 
   @override
   CustomColors copyWith({
-    Color? successColor,
-    Color? moreInfo,
+    Color? proColor,
+    Color? proColorBorder,
+    Color? moneyColor,
   }) {
     return CustomColors(
-      successColor: successColor ?? this.successColor,
-      moreInfo: moreInfo ?? this.moreInfo,
+      proColor: proColor ?? this.proColor,
+      proColorBorder: proColorBorder ?? this.proColorBorder,
+      moneyColor: proColorBorder ?? this.moneyColor,
     );
   }
 
@@ -38,8 +44,9 @@ class CustomColors extends ThemeExtension<CustomColors> {
       return this;
     }
     return CustomColors(
-      successColor: Color.lerp(successColor, other.successColor, t),
-      moreInfo: Color.lerp(moreInfo, other.moreInfo, t),
+      proColor: Color.lerp(proColor, other.proColor, t),
+      moneyColor: Color.lerp(proColor, other.moneyColor, t),
+      proColorBorder: Color.lerp(proColorBorder, other.proColorBorder, t),
     );
   }
 
