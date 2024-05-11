@@ -8,9 +8,14 @@ final lightTextTheme = ThemeData.light().textTheme.copyWith(
         fontWeight: FontWeight.w600,
         color: Colors.white,
       ),
+      headlineMedium: const TextStyle(
+        fontSize: defaultTextSize + 4,
+        fontWeight: FontWeight.w700,
+        color: Colors.white,
+      ),
       titleLarge: const TextStyle(
-        fontSize: defaultTextSize * 1.3,
-        fontWeight: FontWeight.w600,
+        fontSize: defaultTextSize + 2,
+        fontWeight: FontWeight.w500,
         color: Colors.white,
       ),
       titleMedium: const TextStyle(
@@ -22,6 +27,11 @@ final lightTextTheme = ThemeData.light().textTheme.copyWith(
         fontSize: defaultTextSize - 2,
         color: Colors.white,
         fontWeight: FontWeight.w500,
+      ),
+      bodyLarge: const TextStyle(
+        fontSize: defaultTextSize + 2,
+        color: Colors.white,
+        fontWeight: FontWeight.w400,
       ),
       bodyMedium: const TextStyle(
         fontSize: defaultTextSize,
@@ -66,6 +76,11 @@ final darkTextTheme = ThemeData.dark().textTheme.copyWith(
         fontSize: defaultTextSize - 2,
         color: Colors.blueAccent,
         fontWeight: FontWeight.w500,
+      ),
+      bodyLarge: const TextStyle(
+        fontSize: defaultTextSize + 2,
+        color: Colors.white,
+        fontWeight: FontWeight.w400,
       ),
       bodyMedium: const TextStyle(
         fontSize: defaultTextSize,

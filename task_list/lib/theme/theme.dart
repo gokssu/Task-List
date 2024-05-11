@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:task_list/theme/custom_colors.dart';
 import 'package:task_list/theme/text_theme.dart';
 
 final lightScheme = const ColorScheme.light().copyWith(
-  background: const Color(0xff1C242B),
-  onBackground: Colors.white,
-  surface: const Color(0xffFEF7FF),
+  background: const Color(0xffF3F3F3),
+  onBackground: const Color(0xffFFFFFF),
+  surface: const Color(0xffFDFDFD),
   surfaceVariant: const Color(0xffFEF7FF),
-  surfaceTint: Color.fromARGB(255, 250, 170, 83),
-  onSurface: const Color(0xff1D1B20),
+  surfaceTint: const Color(0xff123EB1),
+  onSurface: const Color(0xff000000),
   onSurfaceVariant: const Color(0xff49454F),
   onInverseSurface: const Color(0xffE6E0E9),
-  primary: const Color(0xff4893EB),
+  primary: const Color(0xff3556AB),
   onPrimary: const Color(0xffFFFFFF),
   inversePrimary: const Color(0xff4893AB),
-  primaryContainer: const Color(0xff4893EB),
+  primaryContainer: const Color(0xff0D2972),
   onPrimaryContainer: const Color(0xff21005D),
   secondary: const Color(0xff625B71),
   onSecondary: const Color(0xffFFFFFF),
@@ -23,8 +24,8 @@ final lightScheme = const ColorScheme.light().copyWith(
   onTertiary: const Color(0xffFFFFFF),
   tertiaryContainer: const Color(0xffFFD8E4),
   onTertiaryContainer: const Color(0xff31111D),
-  outline: const Color(0xff79747E),
-  outlineVariant: const Color(0xff938F99),
+  outline: const Color(0xffCBCBCB),
+  outlineVariant: const Color(0xff071D55),
   shadow: const Color(0xff000000),
   scrim: const Color(0xff000000),
   error: const Color(0xffB3261E),
@@ -64,13 +65,14 @@ final darkScheme = const ColorScheme.dark().copyWith(
   errorContainer: const Color(0xff8C1D18),
   onErrorContainer: const Color(0xffF9DEDC),
 );
-
 ThemeData lightAppTheme = ThemeData(
   colorScheme: lightScheme,
   textTheme: lightTextTheme,
+  extensions: [lightCustomColors.harmonized(lightScheme)],
 );
 
 ThemeData darkAppTheme = ThemeData(
   colorScheme: darkScheme,
   textTheme: darkTextTheme,
+  extensions: [darkCustomColors.harmonized(darkScheme)],
 );
