@@ -13,4 +13,6 @@ add:
   title: Add New Task
 edit:
   title: Edit Task
+error:
+  common: Something went wrong...
  

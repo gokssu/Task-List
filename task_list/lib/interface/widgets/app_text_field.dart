@@ -6,12 +6,12 @@ class AppTextField extends StatelessWidget {
     this.text,
     this.onChanged,
     required this.title,
-    required this.controller,
+    this.controller,
   });
 
   final String? text;
   final String title;
-  final TextEditingController controller;
+  final TextEditingController? controller;
 
   final Function(String)? onChanged;
   @override
@@ -50,7 +50,6 @@ class AppTextField extends StatelessWidget {
               focusedBorder: border,
             ),
             onChanged: (value) {
-              controller.text = value;
               if (null != onChanged) {
                 onChanged?.call(value);
               }
