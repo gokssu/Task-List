@@ -3,7 +3,7 @@
 Tasks list project developed with Flutter
 
 ## Getting Started
-You can test it with task_list_11.05.apk :)
+You can test it with task_list_11.05.apk
 
 
 <img src="https://github.com/gokssu/favorite_books/assets/26454080/5c1339a0-bedc-4f32-a92b-70b2a9a6efbe" width="300">
